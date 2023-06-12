@@ -1,0 +1,43 @@
+php artisan make:model Level -m
+php artisan make:model Category -m
+php artisan make:model Price -m
+php artisan make:model Course -m
+php artisan make:migration create_course_user_table
+php artisan make:model Review -m
+php artisan make:model Profile -m
+php artisan make:model Requirement -m
+php artisan make:model Goal -r                  create model + controller + crud
+php artisan make:migration create_goals_table
+php artisan make:model Audience -m
+php artisan make:model Section -m
+php artisan make:model Platform -m
+php artisan make:model Lesson -m
+php artisan make:model Description -m
+php artisan make:migration create_lesson_user_table
+php artisan make:model Resource -m
+php artisan make:model Comment -m
+php artisan make:model Reaction -m
+php artisan make:model Image -m
+
+php artisan make:seeder UserSeeder
+php artisan make:seeder LevelSeeder
+php artisan make:seeder CategorySeeder
+php artisan make:seeder PriceSeeder
+php artisan make:seeder CourseSeeder
+php artisan make:factory CourseFactory
+
+php artisan make:factory ImageFactory
+php artisan make:factory RequirementFactory
+php artisan make:factory GoalFactory
+php artisan make:factory AudienceFactory
+php artisan make:factory SectionFactory
+php artisan make:seeder PlatformSeeder
+php artisan make:factory LessonFactory
+php artisan make:factory DescriptionFactory
+
+php artisan make:controller Admin/HomeController
+
+composer require jeroennoten/laravel-adminlte
+php artisan adminlte:install
+
+php artisan make:controller HomeController
